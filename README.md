@@ -52,8 +52,8 @@ make all
 * Now the child threads are created and compute the rows and columns they are given. 
 * By doing so, there is no requirement of synchronization as every thread computes the rows and columns given.
 * In my opinion, this approach is "better" than using synchronization because of the following reasons:
-  All the threads waiting to acquire the lock have to keep waiting until the lock is released or the thread holding the lock is descheduled. If a thread holding a lock is delayed (due to a page fault, scheduling delay, etc.), then no thread that needs that lock can make progress. This leads to a waste of time during waiting which can be avoided by following the approach implemented in my assignment.
-  Use of locks adds an overhead for each access to a resource even when the chances of having a race condition is very low. This overhead can be avoided by designing the program in a way that each thread is given the work they need to perform.
+  * All the threads waiting to acquire the lock have to keep waiting until the lock is released or the thread holding the lock is descheduled. If a thread holding a lock is delayed (due to a page fault, scheduling delay, etc.), then no thread that needs that lock can make progress. This leads to a waste of time during waiting which can be avoided by following the approach implemented in my assignment.
+  * Use of locks adds an overhead for each access to a resource even when the chances of having a race condition is very low. This overhead can be avoided by designing the program in a way that each thread is given the work they need to perform.
 
 ## Motivation
 * If you want to test the time difference in computation with different number of threads and matrices, you can run the following command: 
