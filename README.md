@@ -3,7 +3,7 @@
 <table style="width:100%">
 
   <tr><th>File Name</th> <th>160 Threads</th><th>120 Threads</th><th>80 Threads</th><th>40 Threads</th><th>20 Threads</th><th>10 Threads</th><th>1 Thread</th></tr>
-  <tr><td>m10.dat</td> <td>0.0185410340</td><td>0.0176446500</td><td>0.0164358010</td></tr><td>0.0129977520</td><td>0.0108341230</td><td>0.0098444360</td><td>0.0095271970</td></tr>
+  <tr><td>m10.dat</td> <td>0.0185410340</td><td>0.0176446500</td><td>0.0164358010</td><td>0.0129977520</td><td>0.0108341230</td><td>0.0098444360</td><td>0.0095271970</td></tr>
 
   <tr><td>m100.dat</td> <td>0.0179238348</td><td>0.0174436940</td><td>0.0131863240</td><td>0.0128605950</td><td>0.0114229760</td><td>0.0120185290</td><td>0.0200017910</td></tr>
 
