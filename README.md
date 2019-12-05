@@ -1,11 +1,22 @@
 # Process Manager
 
-
-For the following files and number of threads, the time results are as follows:
-| File Name | Number of threads | Time Taken |
-| :-------: | :---------------: | ---------: |
-|  m10.dat  | 160				|			 |
-
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
 ## Table of contents
 * [Overview](#overview)
 * [Prerequisites](#prerequisites)
