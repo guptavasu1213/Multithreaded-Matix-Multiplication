@@ -1,12 +1,4 @@
-*-----------------------------------------------------------------
-Name: Vasu Gupta
-Student ID: 3066521
-Assignment 3
-CMPT 360
-----------------------------------------------------------------*
-
-
-# Multi-threaded MacEwan MMaping Matrix Multiplication
+# Multi-threaded Square Matrix Multiplication
 
 ## Table of contents
 * [Overview](#overview)
