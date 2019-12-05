@@ -1,6 +1,11 @@
 # Process Manager
+
 <table style="width:100%">
-  <tr><th>File Name</th> <th>Number of Threads</th><th>Time Taken (in seconds)</th></tr>
+  <tr><th>File Name</th> <th>160 Threads</th><th>120 Threads</th><th>80 Threads</th><th>40 Threads</th><th>20 Threads</th><th>10 Threads</th><th>1 Thread</th></tr>
+  <tr><td>m10.dat</td> <td>0.0185410340</td><td>0.0176446500</td><td>0.0164358010</td></tr>
+  	<td>0.0129977520</td><td>0.0108341230</td><td>0.0098444360</td><td>0.0095271970</td></tr>
+
+
   <tr><td>m10.dat</td> <td>160</td><td>0.0185410340</td></tr>
   <tr><td>m10.dat</td> <td>120</td><td>0.0176446500</td></tr>
   <tr><td>m10.dat</td> <td>80</td><td>0.0164358010</td></tr>
