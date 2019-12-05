@@ -52,7 +52,7 @@ make all
 * When the number of the threads is greater than dimension * dimension, the  number of threads to be created is set to dimension * dimension. This is to avoid creation of extra threads which do not perform any tasks.
 * Before creating any child threads, the parent thread calculates the number of row and column operations to be performed by each thread and those values in a struct created for each thread. 
 * Now the child threads are created and compute the rows and columns they are given. 
-* By doing so, there is no requirement of synchronization as every thread computes the rows and columns given.
+* By doing so, there is no requirement of synchronization as every thread computes the rows and columns given which leads to a highly concurrent program with no possible race conditions.
 * In my opinion, this approach is "better" than using synchronization because of the following reasons:
 	* All the threads waiting to acquire the lock have to keep waiting until the lock is released or the thread holding the lock is descheduled. If a thread holding a lock is delayed (due to a page fault, scheduling delay, etc.), then no thread that needs that lock can make progress. This leads to a waste of time during waiting which can be avoided by following the approach implemented in my assignment.
 	* Use of locks adds an overhead for each access to a resource even when the chances of having a race condition is very low. This overhead can be avoided by designing the program in a way that each thread is given the work they need to perform without having any overlap.
@@ -66,14 +66,14 @@ make generateData
 * The time taken for computation for each file and thread is stored in a text file.
 * This text file is now used by a python script which plots a graph and displays it.
 
-* If you have the data file, for example: graph.txt (in my repository) and you wish to plot it, you can run the following command to run a python script:
+* If you have the data file, for example: ./graphs/testResults.txt (in my repository) and you wish to plot it, you can run the following command to run a python script:
 ```
-make plots
+make plot
 ```
 
 * If your graph data file is named differently and you wish to plot it, you can directly run the python script by:
 ```
-python3 graphGenerator.py <fileName>
+python3 ./graphs/graphGenerator.py <fileName>
 ```
 
 ## Times Measured
@@ -95,10 +95,12 @@ For the following files and number of threads, the time results (in seconds) are
 
 </table>
 
-* As the tests were run on student server with 40 physical cores and 80 cores with hyperthreading, there is not a huge increase in performance when the thread count exceeds 40. 
+* The tests were run on a server with 40 physical cores and 80 cores with hyperthreading, there is not a huge increase in performance when the thread count exceeds 40. 
 * In case of matrix of dimension 10000, having more threads than cores seems to be an overhead as it keeps context switching between those threads to perform the task.
 * As expected, the table shows huge decrease in times measured when the thread count goes up (in cases of 1, 10, 20 and 40 threads). This is noticeable in the matrices with large dimensions.
-* These numbers are recorded by the bash script which stores the numbers in a file "testResults.txt"
+* These numbers are recorded by the bash script which stores the numbers in a file 'testResults.txt' which is in the 'graphs' directory.
+* The file "allFiles.png" would represent a graph for having all the test files given with different number of threads.
+* Individual graphs associated with each file can also be found in the directory 'graphs'.
 
 ## Status
 The project is finished.
