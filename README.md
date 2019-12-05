@@ -1,58 +1,19 @@
 # Process Manager
 
 <table style="width:100%">
+
   <tr><th>File Name</th> <th>160 Threads</th><th>120 Threads</th><th>80 Threads</th><th>40 Threads</th><th>20 Threads</th><th>10 Threads</th><th>1 Thread</th></tr>
-  <tr><td>m10.dat</td> <td>0.0185410340</td><td>0.0176446500</td><td>0.0164358010</td>
-    <td>0.0129977520</td><td>0.0108341230</td><td>0.0098444360</td><td>0.0095271970</td></tr>
+  <tr><td>m10.dat</td> <td>0.0185410340</td><td>0.0176446500</td><td>0.0164358010</td></tr><td>0.0129977520</td><td>0.0108341230</td><td>0.0098444360</td><td>0.0095271970</td></tr>
 
+  <tr><td>m100.dat</td> <td>0.0179238348</td><td>0.0174436940</td><td>0.0131863240</td><td>0.0128605950</td><td>0.0114229760</td><td>0.0120185290</td><td>0.0200017910</td></tr>
 
-  <tr><td>m10.dat</td> <td>160</td><td>0.0185410340</td></tr>
-  <tr><td>m10.dat</td> <td>120</td><td>0.0176446500</td></tr>
-  <tr><td>m10.dat</td> <td>80</td><td>0.0164358010</td></tr>
-  <tr><td>m10.dat</td> <td>40</td><td>0.0129977520</td></tr>
-  <tr><td>m10.dat</td> <td>20</td><td>0.0108341230</td></tr>
-  <tr><td>m10.dat</td> <td>10</td><td>0.0098444360</td></tr>
-  <tr><td>m10.dat</td> <td>1</td> <td>0.0095271970</td></tr>
+  <tr><td>m500.dat</td> <td>0.0410683900</td><td>0.0408631890</td><td>0.0395425950</td><td>0.0479200240</td><td>0.0490849880</td><td>0.0712629350</td><td>0.4832405140</td></tr>
 
-  <tr><td>m100.dat</td> <td>160</td><td>0.0179238348</td></tr>
-  <tr><td>m100.dat</td> <td>120</td><td>0.0174436940</td></tr>
-  <tr><td>m100.dat</td> <td>80</td><td>0.0131863240</td></tr>
-  <tr><td>m100.dat</td> <td>40</td><td>0.0128605950</td></tr>
-  <tr><td>m100.dat</td> <td>20</td><td>0.0114229760</td></tr>
-  <tr><td>m100.dat</td> <td>10</td><td>0.0120185290</td></tr>
-  <tr><td>m100.dat</td> <td>1</td><td>0.0200017910</td></tr>
+  <tr><td>m1000.dat</td> <td>0.1501630190</td> <td>0.1458612020</td><td>0.1532011420</td><td>0.2602762910</td><td>0.2406372030</td><td>0.4335066180</td><td>3.9594505950</td></tr>
 
-  <tr><td>m500.dat</td> <td>160</td><td>0.0410683900</td></tr>
-  <tr><td>m500.dat</td> <td>120</td><td>0.0408631890</td></tr>
-  <tr><td>m500.dat</td> <td>80</td><td>0.0395425950</td></tr>
-  <tr><td>m500.dat</td> <td>40</td><td>0.0479200240</td></tr>
-  <tr><td>m500.dat</td> <td>20</td><td>0.0490849880</td></tr>
-  <tr><td>m500.dat</td> <td>10</td><td>0.0712629350</td></tr>
-  <tr><td>m500.dat</td> <td>1</td><td>0.4832405140</td></tr>
+  <tr><td>m5000.dat</td> <td>20.9170149750</td><td>21.9774168850</td><td>21.0494958910</td><td>24.8996945430</td><td>48.9794775770</td><td>97.7685682500</td><td>1014.6978075420</td></tr>
 
-  <tr><td>m1000.dat</td> <td>160</td><td>0.1501630190</td></tr>
-  <tr><td>m1000.dat</td> <td>120</td><td>0.1458612020</td></tr>
-  <tr><td>m1000.dat</td> <td>80</td><td>0.1532011420</td></tr>
-  <tr><td>m1000.dat</td> <td>40</td><td>0.2602762910</td></tr>
-  <tr><td>m1000.dat</td> <td>20</td><td>0.2406372030</td></tr>
-  <tr><td>m1000.dat</td> <td>10</td><td>0.4335066180</td></tr>
-  <tr><td>m1000.dat</td> <td>1</td><td>3.9594505950</td></tr>
-
-  <tr><td>m5000.dat</td> <td>160</td><td>20.9170149750</td></tr>
-  <tr><td>m5000.dat</td> <td>120</td><td>21.9774168850</td></tr>
-  <tr><td>m5000.dat</td> <td>80</td><td>21.0494958910</td></tr>
-  <tr><td>m5000.dat</td> <td>40</td><td>24.8996945430</td></tr>
-  <tr><td>m5000.dat</td> <td>20</td><td>48.9794775770</td></tr>
-  <tr><td>m5000.dat</td> <td>10</td><td>97.7685682500</td></tr>
-  <tr><td>m5000.dat</td> <td>1</td><td>1014.6978075420</td></tr>
-
-  <tr><td>m10000.dat</td> <td>160</td><td>304.4820270940</td></tr>
-  <tr><td>m10000.dat</td> <td>120</td><td>307.7789388800</td></tr>
-  <tr><td>m10000.dat</td> <td>80</td><td>241.2476528310</td></tr>
-  <tr><td>m10000.dat</td> <td>40</td><td>261.0176836150</td></tr>
-  <tr><td>m10000.dat</td> <td>20</td><td>513.7659469080</td></tr>
-  <tr><td>m10000.dat</td> <td>10</td><td>1025.0914597390</td></tr>
-  <tr><td>m10000.dat</td> <td>1</td><td>10521.0287326060</td></tr>
+  <tr><td>m10000.dat</td> <td>304.4820270940</td><td>307.7789388800</td><td>241.2476528310</td><td>261.0176836150</td><td>513.7659469080</td><td>1025.0914597390</td><td>10521.0287326060</td></tr>
 
 </table>
 
