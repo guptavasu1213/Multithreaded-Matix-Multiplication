@@ -95,7 +95,7 @@ For the following files and number of threads, the time results (in seconds) are
 
 </table>
 
-* As the tests were run on student server with 40 physical cores and 80 cores with hyperthreading, there is not a huge increase in performance when the thread count exceeds 40. 
+* The tests were run on a server with 40 physical cores and 80 cores with hyperthreading, there is not a huge increase in performance when the thread count exceeds 40. 
 * In case of matrix of dimension 10000, having more threads than cores seems to be an overhead as it keeps context switching between those threads to perform the task.
 * As expected, the table shows huge decrease in times measured when the thread count goes up (in cases of 1, 10, 20 and 40 threads). This is noticeable in the matrices with large dimensions.
 * These numbers are recorded by the bash script which stores the numbers in a file 'testResults.txt' which is in the 'graphs' directory.
