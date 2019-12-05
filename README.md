@@ -1,5 +1,11 @@
 # Process Manager
 
+
+For the following files and number of threads, the time results are as follows:
+| File Name | Number of threads | Time Taken |
+| --------- | :---------------: | ---------: |
+|  m10.dat  | 160				|			 |
+
 ## Table of contents
 * [Overview](#overview)
 * [Prerequisites](#prerequisites)
